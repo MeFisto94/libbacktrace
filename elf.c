@@ -3195,8 +3195,8 @@ elf_add (struct backtrace_state *state, const char *filename, int descriptor,
     backtrace_release_view (state, &names_view, error_callback, data);
   if (symtab_view_valid)
     backtrace_release_view (state, &symtab_view, error_callback, data);
-  if (strtab_view_valid)
-    backtrace_release_view (state, &strtab_view, error_callback, data);
+//  if (strtab_view_valid)
+//    backtrace_release_view (state, &strtab_view, error_callback, data);
   if (debuglink_view_valid)
     backtrace_release_view (state, &debuglink_view, error_callback, data);
   if (buildid_view_valid)
